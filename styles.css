@@ -1,0 +1,81 @@
+.outer {
+    border: 1px solid #000;
+    height: 50px;
+    width: 10%;
+  }
+
+   .beer .outer {
+    display:flex;
+    justify-content:flex-end;
+    flex-direction:column;
+    box-shadow: 0 0 10px black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    width: 20px;
+    height: 70px;
+    }  
+
+  .inner {
+    transition: 1s all;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(155, 241, 97);
+   
+  }
+
+  .innertap {
+    transition: 1s all;
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+  }
+
+  .outertap {
+    border: 1px solid #000;
+    height: 50px;
+    width: 10%;
+    box-shadow: 0 0 10px black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    width: 20px;
+    height: 70px;
+  }
+
+.tap .outertap {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+} 
+
+  #beers{
+   /*  display: grid;
+    grid-template-rows: auto;*/
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 30px;  */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(1.5, 1fr);
+    grid-column-gap: 5px;
+  }
+
+  #taps{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(1.5, 1fr);
+    grid-column-gap: 5px;
+  }
+
+  h2 {
+    /* writing-mode: vertical-lr;
+    text-orientation: upright;  */
+    font-size: 18px;
+    transform: rotate(10deg);
+    animation: change 2s 1;
+  }
+
+  @keyframes change {
+    100%{
+      transform: rotate(370deg)
+    }
+  }
