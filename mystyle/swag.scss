@@ -1,3 +1,12 @@
+$primaryColor: rgba(5, 5, 151, 0.897);
+$backgroundColor: rgba(128, 13, 143, 0.87);
+$textColor: rgb(4, 143, 161);
+$lineColor:rgb(107, 72, 6);
+
+body{
+background-color: rgb(236, 237, 240);
+}
+
 .outer {
     border: 1px solid #000;
     height: 50px;
@@ -19,7 +28,7 @@
     transition: 1s all;
     height: 50px;
     width: 100%;
-    background-color: rgb(155, 241, 97);
+    background-color:$backgroundColor;
    
   }
 
@@ -27,7 +36,7 @@
     transition: 1s all;
     height: 50px;
     width: 100%;
-    background-color: blue;
+    background-color:$primaryColor;
   }
 
   .outertap {
@@ -72,6 +81,17 @@
     font-size: 18px;
     transform: rotate(10deg);
     animation: change 2s 1;
+    color:$lineColor;
+    font-family: 'Abel', sans-serif;
+  }
+
+  .text{
+  font-family: 'Nunito', sans-serif;
+  }
+
+  p{
+    color: $textColor;
+    font-family: 'Roboto Slab', serif;
   }
 
   @keyframes change {
